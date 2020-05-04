@@ -10,5 +10,35 @@ body{
     justify-content: center;
     align-content: center;
     min-height: 100vh;
-    background: rgb(236, 236, 90);
+    background: rgb(236, 236, 46);
+}
+div.content img{
+    max-width: 30%;
+}
+.container{
+    position: relative;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    grid-template-rows: minmax(100px,auto);
+    grid-auto-flow: dense;
+    grid-gap: 10px
+}
+.container .box{
+    background: rgba(241, 241, 69, 0.596);
+    padding: 20px;
+    display: grid;
+    font-size: 20px;
+    place-items: center;
+    text-align: center;
+    color: #fff;
+    transition: 0.5s;
+}
+.container .box:hover{
+    background: #e91e63;
+}
+.container .box img{
+    position: relative;
+    max-width: 100px;
+    margin-bottom: 10px;
 }
