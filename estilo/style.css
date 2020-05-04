@@ -73,3 +73,13 @@ body{
         grid-row: unset !important;
     }
 }
+a:link{
+    text-decoration: none;
+    color: inherit;
+}
+a:visited{
+    color: black;
+}
+
+
+
