@@ -53,4 +53,17 @@ a:link{
 a:visited{
     color: black;
 }
-
+.input{
+    border: black;
+}
+.button{
+    background: rgb(46, 57, 150);
+    color: white;
+    font: normal 20;
+    box-sizing: border-box;
+    font-family: 'Rubik',sans-serif;
+    font-size: 1em;
+    padding: 10px 24px;
+    margin: 2px;
+    border-radius: 90px;
+}
