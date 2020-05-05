@@ -1,0 +1,73 @@
+.container .box2{
+    background: rgba(248, 248, 54, 0.801);
+    padding: 20px;
+    display: grid;
+    font-size: 20px;
+    place-items: center;
+    text-align: center;
+    color: black;
+    transition: 0.5s;
+}
+
+@import url('http://fonts.googleapis.com/css?family=Rubik:300,400,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik',sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    background: rgb(212, 212, 43);
+}
+.container .box2 .content #logofirst{
+    max-width: 70%;
+}
+
+.container .box2 img{
+    position: relative;
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+}
+
+@media (max-width: 991px){
+    .container .box2{
+        grid-template-columns: repeat(auto-fill,minmax(50%,1fr));
+        grid-template-rows: minmax(auto,auto);
+    }
+    .container .box2{
+        grid-column: unset !important;
+        grid-row: unset !important;
+    }
+}
+a:link{
+    text-decoration: none;
+    color: inherit;
+}
+a:visited{
+    color: black;
+}
+.input{
+    border: black;
+}
+.button{
+    background: rgb(46, 57, 150);
+    color: white;
+    font: normal 20;
+    box-sizing: border-box;
+    font-family: 'Rubik',sans-serif;
+    font-size: 1em;
+    padding: 10px 24px;
+    margin: 2px;
+    border-radius: 90px;
+}
+.voltar img{
+    width: 30px;
+    height: 30px;
+}
