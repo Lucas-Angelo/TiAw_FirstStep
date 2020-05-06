@@ -12,8 +12,8 @@ body{
     min-height: 100vh;
     background: rgb(212, 212, 43);
 }
-.container .box .content #logofirst{
-    max-width: 50%;
+.box img{
+    max-width: 100%;
 }
 .container{
     position: relative;
@@ -85,5 +85,6 @@ a:visited{
 a#logo img{
     max-width: 50%;
 }
-
-
+.box{
+    align-content: center;
+}
