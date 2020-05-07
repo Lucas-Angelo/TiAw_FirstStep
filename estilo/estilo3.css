@@ -28,6 +28,9 @@ body{
 .card:hover{
     background: #e91e63 !important;
 }
+#a{
+    color: black;
+}
 
 
 @media (max-width: 575.98px) {
