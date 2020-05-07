@@ -74,17 +74,6 @@ body{
         grid-row: unset !important;
     }
 }
-@media (min-width: 1280px)
-{
-    .container{
-        grid-template-columns: repeat(auto-fill,minmax(50%,1fr));
-        grid-template-rows: minmax(auto,auto);
-    }
-    .container .box{
-        grid-column: unset !important;
-        grid-row: unset !important;
-    }
-}
 a:link{
     text-decoration: none;
     color: inherit;
