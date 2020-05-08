@@ -88,3 +88,48 @@ a#logo img{
 .box{
     align-content: center;
 }
+
+/*style do encontre seu esporte*/
+
+.container .boxesporte{
+    background: rgba(248, 248, 54, 0.801);
+    padding: 20px;
+    display: grid;
+    font-size: 20px;
+    place-items: center;
+    text-align: center;
+    color: black;
+    transition: 0.5s;
+}
+.container .boxesporte img{
+    position: relative;
+    max-width: 30%;
+    margin-bottom: 10px;
+}
+.container .boxesporte:nth-child(1){
+    grid-column: span 4;
+    grid-row: span 1;
+}
+@media (max-width: 991px)
+{
+    .container{
+        grid-template-columns: repeat(auto-fill,minmax(50%,1fr));
+        grid-template-rows: minmax(auto,auto);
+    }
+    .container .boxesporte{
+        grid-column: unset !important;
+        grid-row: unset !important;
+    }
+}
+div.alternativa input{
+    border-radius: 50%;
+}
+div.alternativa{
+    padding: 10px;
+    margin: 10px;
+}
+input#resultado{
+    border-radius: 30%;
+    padding: 10px;
+    background: rgb(101, 101, 214);
+}

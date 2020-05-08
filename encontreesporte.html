@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Authors" content="Marco Tullio, Lucas Ângelo,  Victor Campos, Vinícius Marini">
+    <link rel="stylesheet" href="estilo/style2.css">
+    <title>Encontre seu esporte!</title>
+</head>
+<body>
+    <div class="container">
+        <div class="boxesporte">
+                <img src="images/logosemfundo.png" alt="logo FirstStep">
+                <h4>Marque a alternativa chave que te impede de se exercitar: </h4>
+                <br>
+                <div class="alternativas">
+                    <p>
+                    <input type="checkbox" id="Preguiça" name="Preguiça" value="Preguiça">Preguiça</p>
+                </div>
+                <div class="alternativas">
+                    <p><input type="checkbox" id="Tempo" name="Tempo" value="Tempo">Tempo</p>
+                     
+                </div>
+                <div class="alternativas">
+                    <p>
+                    <input type="checkbox" id="Dinheiro" name="Dinheiro" value="Dinheiro">
+                    Dinheiro</p>
+                </div>
+                <input type="button" id="resultado" value="Encontre Seu Esporte" />
+        </div>
+    </div>
+<script>
+    var Preguiça = window.document.getElementById('Preguiça')
+    var Tempo = window.document.getElementById('Preguiça')
+    var Dinheiro = window.document.getElementById('Preguiça')
+
+    var Preguiça = document.getElementById("Preguiça");
+    var Tempo = document.getElementById("Tempo");
+    var Dinheiro = document.getElementById("Dinheiro");
+
+    document.getElementById("resultado").onclick = function () {
+        if (Preguiça.checked) {
+            window.location.href="preguica.html"
+        }
+
+        else if (Tempo.checked) {
+            window.location.href="tempo.html"
+        }
+        else if (Dinheiro.checked) {
+            window.location.href="dinheiro.html"
+        }
+        if(Preguiça.checked&&Tempo.checked || Preguiça.checked&&Dinheiro.checked||Dinheiro.checked&&Tempo.checked || Preguiça.checked&&Tempo.checked&&Dinheiro.checked){
+            alert("Escolha uma somente opção!")
+            window.location.href="encontreesporte.html"
+        }
+    };
+    
+</script>
+</body>
+</html>
