@@ -1,64 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Authors" content="Marco Tullio, Lucas Ângelo,  Victor Campos, Vinícius Marini">
-    <link rel="stylesheet" href="estilo/style4.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Authors" content="Marco Tullio, Lucas Ângelo,  Victor Campos, Vinícius Marini" />
+    <link rel="stylesheet" href="estilo/style4.css" />
     <title>Encontre seu esporte!</title>
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet" />
 </head>
 <body>
     <div class="container">
         <div class="boxesporte">
-                <img src="images/logosemfundo.png" alt="logo FirstStep">
-                <h4>Marque a alternativa chave que te impede de se exercitar: </h4>
-                <br>
-                <div class="alternativas form-check">
-                    <p>
-                    <input type="checkbox" class="form-check-input" id="Preguiça" name="Preguiça" value="Preguiça">Preguiça</p>
+            <img src="images/logosemfundo.png" alt="logo FirstStep" />
+            <h4>Marque a alternativa chave que te impede de se exercitar:</h4>
+            <br />
+            <div class="alternativas">
+                <form>
+                    <div class="alternativa">
+                        <input type="checkbox" id="Preguica" />
+                        <label for="Preguica"><a>Preguiça</a></label>
+                    </div>
+                    <div class="alternativa">
+                        <input type="checkbox" id="Tempo" />
+                        <label for="Tempo"><a>Tempo</a></label>
+                    </div>
+                    <div class="alternativa">
+                        <input type="checkbox" id="Dinheiro" />
+                        <label for="Dinheiro"><a>Dinheiro</a></label>
+                    </div>
+                </form>
+                <div class="row">
+                    <button type="submit" id="resultado" class="btn btn-primary">Escontre seu Esporte</button>
                 </div>
-                <div class="alternativas">
-                    <p><input type="checkbox" id="Tempo" name="Tempo" value="Tempo">Tempo</p>
-                     
-                </div>
-                <div class="alternativas">
-                    <p>
-                    <input type="checkbox" id="Dinheiro" name="Dinheiro" value="Dinheiro">
-                    Dinheiro</p>
-                </div>
-                <input type="button" id="resultado" value="Encontre Seu Esporte" />
+            </div>
         </div>
-    </div>
-<script>
-    var Preguiça = window.document.getElementById('Preguiça')
-    var Tempo = window.document.getElementById('Preguiça')
-    var Dinheiro = window.document.getElementById('Preguiça')
+        <script>
+            var Preguiça = window.document.getElementById("Preguica");
+            var Tempo = window.document.getElementById("Preguica");
+            var Dinheiro = window.document.getElementById("Preguica");
 
-    var Preguiça = document.getElementById("Preguiça");
-    var Tempo = document.getElementById("Tempo");
-    var Dinheiro = document.getElementById("Dinheiro");
+            var Preguica = document.getElementById("Preguica");
+            var Tempo = document.getElementById("Tempo");
+            var Dinheiro = document.getElementById("Dinheiro");
 
-    document.getElementById("resultado").onclick = function () {
-        if (Preguiça.checked) {
-            window.location.href="preguica.html"
-        }
-
-        else if (Tempo.checked) {
-            window.location.href="tempo.html"
-        }
-        else if (Dinheiro.checked) {
-            window.location.href="dinheiro.html"
-        }
-        if(Preguiça.checked&&Tempo.checked || Preguiça.checked&&Dinheiro.checked||Dinheiro.checked&&Tempo.checked || Preguiça.checked&&Tempo.checked&&Dinheiro.checked){
-            alert("Escolha somente uma opção!")
-            window.location.href="encontreesporte.html"
-        }
-    };
-    
-</script>
+            document.getElementById("resultado").onclick = function () {
+                if (Preguiça.checked) {
+                    window.location.href = "preguica.html";
+                } else if (Tempo.checked) {
+                    window.location.href = "tempo.html";
+                } else if (Dinheiro.checked) {
+                    window.location.href = "dinheiro.html";
+                }
+                if (
+                    (Preguica.checked && Tempo.checked) ||
+                    (Preguica.checked && Dinheiro.checked) ||
+                    (Dinheiro.checked && Tempo.checked) ||
+                    (Preguica.checked && Tempo.checked && Dinheiro.checked)
+                ) {
+                    alert("Escolha somente uma opção!");
+                    window.location.href = "encontreesporte.html";
+                }
+                if (
+                    (Preguica.checked == false) &&
+                    (Dinheiro.checked == false) &&
+                    (Tempo.checked == false)
+                ) {
+                    alert("Selecione uma opção!");
+                    window.location.href = "encontreesporte.html";
+                }
+            };
+        </script>
 </body>
 </html>
