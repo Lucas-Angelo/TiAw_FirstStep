@@ -131,8 +131,13 @@ a:visited{
 
 .exercicio li {
     text-align: center;
-    margin-top:20px;
+    margin-top:10px;
+    font-family: 'Chewy', cursive; 
 }
 .titulo  {
-    margin-bottom:150px;
+    margin-bottom:30px;
+    font-family: 'Pacifico', cursive;
+}
+body{
+    overflow-y: hidden;
 }
