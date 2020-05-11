@@ -11,6 +11,7 @@ body{
     align-content: center;
     min-height: 100vh;
     background: rgb(212, 212, 43);
+    background: rgb(0, 0, 0);
 }
 .box img{
     max-width: 100%;
@@ -27,6 +28,7 @@ body{
 }
 .container .box{
     background: rgba(248, 248, 54, 0.801);
+    background: #FFFF66;
     padding: 20px;
     display: grid;
     font-size: 20px;
