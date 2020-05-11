@@ -38,6 +38,9 @@ body{
 .container .box:hover{
     background: #e91e63;
 }
+.container .desativado:hover{
+    background: #6d6d6d;
+}
 .container .box img{
     position: relative;
     max-width: 100px;
@@ -110,6 +113,7 @@ a#logo img{
     grid-column: span 4;
     grid-row: span 1;
 }
+
 @media (max-width: 991px)
 {
     .container{
