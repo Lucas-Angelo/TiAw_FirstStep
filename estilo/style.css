@@ -135,3 +135,10 @@ p a#more button{
     border-radius: 15px;
     padding: 5px;
 }
+a#dica button{
+    color: black;
+    font-family: 'Rubik',Arial;
+    font-size: 15px;
+    border-radius: 15px;
+    padding: 5px;
+}
