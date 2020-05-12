@@ -204,3 +204,6 @@ button#resultado{
     padding: 10px;
     background: rgb(101, 101, 214);
 }
+img#logoinicio{
+    max-width: 25%;
+}
