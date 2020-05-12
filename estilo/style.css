@@ -128,3 +128,10 @@ a:visited{
     grid-column: span 3;
     grid-row: span 1;
 }
+p a#more button{
+    color: black;
+    font-family: 'Rubik',Arial;
+    font-size: 15px;
+    border-radius: 15px;
+    padding: 5px;
+}
