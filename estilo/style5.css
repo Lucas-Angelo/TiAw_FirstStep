@@ -141,3 +141,13 @@ a:visited{
 body{
     overflow-y: hidden;
 }
+p a#more img{
+    max-width: 40px;
+}
+p a#more button{
+    color: black;
+    font-family: 'Rubik',Arial;
+    font-size: 15px;
+    border-radius: 15px;
+    padding: 5px;
+}
