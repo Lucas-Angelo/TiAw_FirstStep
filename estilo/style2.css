@@ -35,27 +35,31 @@ a{
 
 
 @media (max-width: 575.98px) {
- div.container_area_card{
-     margin-left: 40px !important;
- }
- div .mb-3{
-    max-width: 350px !important;
-    margin-left: 34px !important;
- }
+    div.principal{
+        
+    }
+
+    div.corpo{
+        margin-left: 30px !important;
+        width: 350px !important;
+    }
+    div.corpolateral{
+        margin-left: 30px !important;
+    }
+
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-    div.container_area_card{
-        margin-left: 25px !important;
+    div.corpo{
+        margin-left: 100px !important;
     }
-    div .mb-3{
-       max-width: 350px !important;
-       margin-left: 34px !important;
-    }
+
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
     
-   
+    div.corpo{
+        margin-left: 0px !important;
+    }
     
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
