@@ -10,6 +10,7 @@ body{
     justify-content: center;
     align-content: center;
     min-height: 100vh;
+    background: rgb(212, 212, 43);
     background: rgb(0, 0, 0);
 }
 .box img{
@@ -26,6 +27,7 @@ body{
     padding: 10px;
 }
 .container .box{
+    background: rgba(248, 248, 54, 0.801);
     background: #FFFF66;
     padding: 20px;
     display: grid;
