@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: "Rubik", sans-serif;
 }
+
 body{
     display: flex !important;
     flex-wrap: wrap !important;
@@ -12,4 +13,55 @@ body{
     align-content: center !important;
     min-height: 100vh !important;
     background: rgb(209, 209, 54) !important;
+}
+
+.card-title{
+    color: black;
+}
+
+.card {
+    background: rgba(255, 255, 0, 0.801) !important;
+    display: grid !important;
+    font-size: 20px;
+    text-align: center !important;
+    color: black;
+    transition: 0.5s !important;
+    position: relative;
+    font-family: "Rubik", sans-serif !important;
+}
+
+.card img{
+    color: inherit !important;
+    display: block !important;
+    margin: 0 auto;
+}
+
+.removeAncora{
+    text-decoration: none !important;
+    font-family: "Rubik", sans-serif !important;
+}
+
+.desativado{
+    text-decoration: none !important;
+    font-family: "Rubik", sans-serif !important;
+}
+
+.ativado:hover{
+    background: #e91e63 !important;
+}
+
+.desativado:hover{
+    content: url('/images/paginaEmConstrucao.png');
+    height: 275px;
+    width: 100%;
+}
+
+a {
+    color: black !important;
+}
+
+@media only screen and (min-width: 992px){
+    #imgLateral{
+        margin-top: 200px;
+    }
 }
