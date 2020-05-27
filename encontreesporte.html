@@ -45,7 +45,7 @@
                 <div class="d-flex justify-content-center alternativas">
                     <form>
                         <div class="custom-control custom-checkbox alternativa mb-1">
-                            <input type="checkbox" class="custom-control-input" id="Preguica"/>
+                            <input type="checkbox" class="custom-control-input" id="Preguica" />
                             <label class="custom-control-label" for="Preguica"><a>Preguiça</a></label>
                         </div>
                         <div class="custom-control custom-checkbox alternativa mb-1">
@@ -65,6 +65,14 @@
             </div>
         </div>
     </div>
+
+    <script>
+        $("input:checkbox").click(function () {
+            var bol = $("input:checkbox:checked").length >= 1;
+            $("input:checkbox").not(":checked").attr("disabled", bol);
+        });
+    </script>
+
     <script>
         var Preguiça = window.document.getElementById("Preguica");
         var Tempo = window.document.getElementById("Preguica");
