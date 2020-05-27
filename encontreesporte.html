@@ -23,48 +23,75 @@
     <!-- FontAwesome adicionais -->
     <script src="https://kit.fontawesome.com/6b5e57f71c.js" crossorigin="anonymous"></script>
     <!-- FontAwesome adicionais -->
+
+    <script src="/modules/w3schools.css"></script>
     <!-- Adicionais Fim  -->
 
 
 </head>
 
 <body>
-    <div class="m-0 p-0 dentro mt-2 mb-2">
-        <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-12 mt-4 pl-4 pr-4">
-                <div class="d-flex justify-content-center">
-                    <a class="voltar" href="index.html"><img src="images/btn-back.png" height="25px">Voltar para
-                        Home</a>
-                </div>
-                <div class="d-flex justify-content-center">
-                    <img id="logoinicio" src="images/logosemfundo.png" alt="logo FirstStep" width="100%"
-                        height="450px" />
-                </div>
-                <h4>Marque a alternativa chave que te impede de se exercitar:</h4>
-                <br>
-                <div class="d-flex justify-content-center alternativas">
-                    <form>
-                        <div class="custom-control custom-checkbox alternativa mb-1">
-                            <input type="checkbox" class="custom-control-input" id="Preguica" />
-                            <label class="custom-control-label" for="Preguica"><a>Preguiça</a></label>
-                        </div>
-                        <div class="custom-control custom-checkbox alternativa mb-1">
-                            <input type="checkbox" class="custom-control-input" id="Tempo" />
-                            <label class="custom-control-label" for="Tempo"><a>Tempo</a></label>
-                        </div>
-                        <div class="custom-control custom-checkbox alternativa">
-                            <input type="checkbox" class="custom-control-input" id="Dinheiro" />
-                            <label class="custom-control-label" for="Dinheiro"><a>Dinheiro</a></label>
-                        </div>
-                    </form>
-                </div>
-                <br>
-                <div class="d-flex justify-content-center">
-                    <button type="submit" id="resultado" class="btn btn-primary">Escontre seu Esporte</button>
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <main class="m-0 p-0 mt-2 mb-2 dentro">
+        <div class="m-0 p-0 mt-2 mb-2">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12 mt-4 pl-4 pr-4">
+                    <button class="openbtn mr-5" onclick="openNav()">☰</button>
+                    <div class="ajusteing ml-5">
+                        <div class="d-flex justify-content-center ajusteing"><a class="voltar" href="index.html"><img
+                                    src="images/btn-back.png" height="25px">Voltar para
+                                Home</a></div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <img id="logoinicio" src="images/logosemfundo.png" alt="logo FirstStep" width="100%"
+                            height="450px" />
+                    </div>
+                    <h4>Marque a alternativa chave que te impede de se exercitar:</h4>
+                    <br>
+                    <div class="d-flex justify-content-center alternativas">
+                        <form>
+                            <div class="custom-control custom-checkbox alternativa mb-1">
+                                <input type="checkbox" class="custom-control-input" id="Preguica" />
+                                <label class="custom-control-label" for="Preguica"><a>Preguiça</a></label>
+                            </div>
+                            <div class="custom-control custom-checkbox alternativa mb-1">
+                                <input type="checkbox" class="custom-control-input" id="Tempo" />
+                                <label class="custom-control-label" for="Tempo"><a>Tempo</a></label>
+                            </div>
+                            <div class="custom-control custom-checkbox alternativa">
+                                <input type="checkbox" class="custom-control-input" id="Dinheiro" />
+                                <label class="custom-control-label" for="Dinheiro"><a>Dinheiro</a></label>
+                            </div>
+                        </form>
+                    </div>
+                    <br>
+                    <div class="d-flex justify-content-center">
+                        <button type="submit" id="resultado" class="btn btn-primary">Escontre seu Esporte</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
 
     <script>
         $("input:checkbox").click(function () {
