@@ -52,7 +52,7 @@ body{
 
 .desativado:hover{
     content: url('/images/paginaEmConstrucao.png');
-    height: 275px;
+    height: 95%;
     width: 100%;
 }
 
