@@ -47,24 +47,8 @@ body {
     margin: 0 auto;
 }
 
-.removeAncora {
-    text-decoration: none !important;
-    font-family: "Rubik", sans-serif !important;
-}
-
-.desativado {
-    text-decoration: none !important;
-    font-family: "Rubik", sans-serif !important;
-}
-
-.ativado:hover {
+.card:hover {
     background: #e91e63 !important;
-}
-
-.desativado:hover {
-    content: url('/images/paginaEmConstrucao.png');
-    height: 275px;
-    width: 100%;
 }
 
 a {
