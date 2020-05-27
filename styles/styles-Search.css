@@ -1,0 +1,39 @@
+@import url("http://fonts.googleapis.com/css?family=Rubik:300,400,500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  line-height: 20px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  background: rgb(209, 209, 54) !important;
+}
+
+a:link{
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+a:visited{
+    color: black !important;
+}
+
+.voltar{
+    margin-top: 10px;
+}
+
+.dentro{
+    background-color:  rgba(255, 255, 0, 0.801) !important;
+    border: black solid 1px;
+}
+
+.alternativas label{
+    color: black;
+    font-size: x-large;
+}
