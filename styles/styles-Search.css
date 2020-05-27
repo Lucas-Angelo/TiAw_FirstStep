@@ -138,8 +138,9 @@ a:visited {
   and (-webkit-min-device-pixel-ratio: 1.5) {
     *{
       font-size: 2rem;
+      line-height: normal !important;
     }
-    .ajusteing #fontmenor{
-      font-size: 1rem !important;
+    .ajusteing voltar{
+      font-size: 1px !important;
     }
 }
