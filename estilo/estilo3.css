@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Rubik", sans-serif;
-  overflow-x: hidden;
 }
 body {
   display: flex !important;
@@ -11,7 +10,7 @@ body {
   justify-content: center !important;
   align-content: center !important;
   min-height: 100vh !important;
-  background: rgb(209, 209, 54) !important;
+  background: rgb(212, 212, 43) !important;
 }
 .card {
   background: rgba(248, 248, 54, 0.801) !important;
@@ -27,32 +26,30 @@ body {
 .card:hover {
   background: #e91e63 !important;
 }
-a {
-  color: black !important;
+#a {
+  color: black;
 }
 
 @media (max-width: 575.98px) {
-  div.principal {
+  div.container_area_card {
+    margin-left: 40px !important;
   }
-
-  div.corpo {
-    margin-left: 30px !important;
-    width: 350px !important;
-  }
-  div.corpolateral {
-    margin-left: 30px !important;
+  div .mb-3 {
+    max-width: 350px !important;
+    margin-left: 34px !important;
   }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-  div.corpo {
-    margin-left: 100px !important;
+  div.container_area_card {
+    margin-left: 25px !important;
+  }
+  div .mb-3 {
+    max-width: 350px !important;
+    margin-left: 34px !important;
   }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
-  div.corpo {
-    margin-left: 0px !important;
-  }
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
 }

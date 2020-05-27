@@ -1,0 +1,146 @@
+@import url("http://fonts.googleapis.com/css?family=Rubik:300,400,500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+  line-height: 20px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  background: rgb(209, 209, 54) !important;
+  padding: 0;
+}
+
+a:link {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+a:visited {
+  color: black !important;
+}
+
+.voltar {
+  margin-top: 10px;
+}
+
+.dentro {
+  background-color: rgba(255, 255, 0, 0.801) !important;
+  border: black solid 1px;
+}
+
+.alternativas label {
+  color: black;
+  font-size: x-large;
+}
+
+.ajusteing {
+  display: inline-flex;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(251, 255, 0);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align:center;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+
+}
+
+.sidenav a:hover{
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: rgb(9, 104, 148);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+.btn-primary {
+  background-color: hsl(351, 68%, 11%) !important;
+  background-repeat: repeat-x;
+  background-image: -o-linear-gradient(top, rgb(9, 104, 148), rgb(9, 104, 148));
+  background-image: linear-gradient(rgb(9, 104, 148), rgb(9, 104, 148));
+  border-color: #2f080e #2f080e hsl(351, 68%, 1.5%);
+  color: #fff !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.62);
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 16px;
+}
+
+
+@media only screen and (min-width: 992px) {
+  .ajusteing {
+    display: inline-flex;
+    margin-left: 300px;
+  }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
+  *{
+      padding: 0%;
+  }
+  .ajusteing{
+    margin-left: 350px;
+  }
+}
+/* ----------- iPad Pro ----------- */
+/* Portrait and Landscape */
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    *{
+      font-size: 2rem;
+      line-height: normal !important;
+    }
+    .ajusteing voltar{
+      font-size: 1px !important;
+    }
+}
