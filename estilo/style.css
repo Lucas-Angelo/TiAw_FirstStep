@@ -142,3 +142,12 @@ a#dica button{
     border-radius: 15px;
     padding: 5px;
 }
+.box2 img.peladeiro{
+    max-width: 80%;
+}
+.box2 img.cf{
+    max-width: 60%;
+}
+.box2 p.cross{
+    text-align: justify;
+}
