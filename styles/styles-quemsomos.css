@@ -16,7 +16,7 @@ body {
 }
 
 .card-title {
-    color: black;
+    color: black !important;
 }
 
 .card {
@@ -24,7 +24,7 @@ body {
     display: grid !important;
     font-size: 20px;
     text-align: center !important;
-    color: black;
+    color: black !important;
     transition: 0.5s !important;
     position: relative;
     font-family: "Rubik", sans-serif !important;
