@@ -151,3 +151,6 @@ a#dica button{
 .box2 p.cross{
     text-align: justify;
 }
+.box2 img.basquete{
+    max-width: 100%;
+}
