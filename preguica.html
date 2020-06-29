@@ -70,7 +70,33 @@
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="barraDeProgresso" style="align-items: center; align-content: center; margin: 1% 5%;">
+
+                    <h2>Sua barra de progresso de atividades!</h1>
+                    <br>
+
+                    <!-- Div For Progress Bar -->
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                            aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="progressbar">0%</div>
+                    </div>
+
+                    <br>
+                    <!-- Buttons -->
+                    <button type="button" class="btn btn-primary" onclick="increment()">Adicionar tarefa concluída</button>
+                    <button type="button" class="btn btn-success" onclick="decrement()">Remover uma tarefa</button>
+
+                    <p id="value"> </p>
+                    <!-- End of Container -->
+                </div>
+            </div>
+        </div>
     </div>
+
+    <script src="/scripts/progressBar.js"></script>
+
 </body>
 
 </html>
