@@ -13,10 +13,11 @@ function setProgress(value) {
 function increment() {
 	var i = getProgress();
 	if(i < 100){
-		i++;
-		setProgress(i);	
+		i = parseInt(i)+20;
+        setProgress(i);	
 	}else{
-		alert("Meta concluída!");
+        alert("Meta concluída! Resetando progresso...");
+        setProgress(0);
 	}
 }
 
