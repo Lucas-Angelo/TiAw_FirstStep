@@ -22,8 +22,15 @@ function increment() {
 }
 
 function decrement() {
-	var d = getProgress();
-	setProgress(d - 1);
+    if(i=getProgress() > 0)
+    {
+        var d = getProgress();
+        setProgress(d - 20);
+    }
+    else
+    {
+        alert("Efetue algum progresso primeiramente.");
+    }
 }
 
 function resetButton() {
