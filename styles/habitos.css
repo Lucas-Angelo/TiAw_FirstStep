@@ -1,0 +1,34 @@
+.box-noticia {
+    margin: 10px 0px;
+    overflow: auto;
+    color: dimgray;
+    clear: both;
+}
+
+.box-noticia img {
+    float: left;
+    margin-right: 10px;
+    width: 180px;
+}
+
+.box-noticia .titulo {
+    font-weight: 700;
+}
+
+.box-noticia .creditos {
+    color: red;
+}
+
+div.container {
+    display: grid;
+}
+
+#titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a:hover {
+    background-color: rgba(255, 0, 0, 0.5) !important;
+}
