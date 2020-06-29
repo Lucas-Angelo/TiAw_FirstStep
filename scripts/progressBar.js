@@ -2,19 +2,29 @@ function getProgress() {
 	return document.getElementById("progressbar").getAttribute("aria-valuenow");
 	return document.getElementById("progressbar").getAttribute("style","width");
 	return document.getElementById("progressbar").innerHTML;
-	}
+}
 
 function setProgress(value) {
 	document.getElementById("progressbar").setAttribute("aria-valuenow",value);
 	document.getElementById("progressbar").setAttribute("style","width: " +value+ "%");	
-	document.getElementById("progressbar").innerHTML = (value+ "%"); 
+	document.getElementById("progressbar").innerHTML = (value+ "%");
+	localStorage.setItem("progresso", value);
 }
+
+function setProgressOnLoad () {
+	let value = localStorage.getItem("progresso");
+	document.getElementById("progressbar").setAttribute("aria-valuenow",value);
+	document.getElementById("progressbar").setAttribute("style","width: " +value+ "%");	
+	document.getElementById("progressbar").innerHTML = (value+ "%");
+}
+setProgressOnLoad ();
 
 function increment() {
 	var i = getProgress();
 	if(i < 100){
 		i = parseInt(i)+20;
-        setProgress(i);	
+		setProgress(i);	
+		
 	}else{
         alert("Meta concluída! Resetando progresso...");
         setProgress(0);
