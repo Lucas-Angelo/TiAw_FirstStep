@@ -29,7 +29,18 @@ function inserecard() {
     // Preencher a DIV com o texto HTML
     divTela.innerHTML = texto;
 }
+var dados = [];
+if (localStorage.getItem('data') != null) dados = JSON.parse(localStorage.getItem('data'));
 
+function pegaDados() {
+    JSON.parse(dados.push({ title: titulo.value, content: conteudo.value }));
+    localStorage.setItem('data', JSON.stringify(dados));
+
+}
+
+
+
+var txt = localStorage.getItem('data');
 
 
 window.onload = function() {
@@ -38,6 +49,9 @@ window.onload = function() {
 
     function salvarImagens() {
         let inputImg = document.getElementById("inputImage");
+
+        if (localStorage.getItem('data') != null) dados = JSON.parse(localStorage.getItem('data'));
+
 
         if (inputImg.files && inputImg.files[0]) {
             //Verificar se tem imagem selecionada
@@ -64,10 +78,13 @@ window.onload = function() {
                 //Salvar o array de imagens no LocalStorage
                 localStorage.setItem("db_imgs", JSON.stringify(imagens));
             };
-
             readerImg.readAsDataURL(inputImg.files[0]);
         }
+
     }
+
+
+
 
     function exibirImagens() {
         let tela = document.getElementById("tela");
@@ -83,11 +100,10 @@ window.onload = function() {
 
         for (i = 0; i < imagens.length; i++) {
             textoHTML += `<div class="card">
-            <img class="card-img-top" width="200" height="200" src="${imagens[i].imagem}" alt="Card image cap">
+            <img class="card-img-top" width="10" height="200" src="${imagens[i].imagem}" alt="Card image cap">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <h5 class="card-title">${JSON.parse(txt)[i].title}</h5>
+                <p class="card-text">${JSON.parse(txt)[i].content}</p>
             </div>
         </div>
             `;
@@ -101,8 +117,12 @@ window.onload = function() {
     botaoSalvar = document.getElementById("btnSalvarImagens");
     botaoSalvar.addEventListener("click", salvarImagens);
 
-    botaoSalvar = document.getElementById("btnExibirImagens");
+    botaoSalvar = document.getElementById("btnSalvarImagens");
+    botaoSalvar.addEventListener("click", pegaDados);
+
+    botaoSalvar = document.getElementById("exibe");
     botaoSalvar.addEventListener("click", exibirImagens);
+
 
 
 }
