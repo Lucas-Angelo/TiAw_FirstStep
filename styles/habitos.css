@@ -1,34 +1,48 @@
-.box-noticia {
-    margin: 10px 0px;
-    overflow: auto;
-    color: dimgray;
-    clear: both;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
 }
 
-.box-noticia img {
-    float: left;
-    margin-right: 10px;
-    width: 180px;
+body {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-content: center !important;
+    min-height: 100vh !important;
+    background: rgb(209, 209, 54) !important;
 }
 
-.box-noticia .titulo {
-    font-weight: 700;
+.card-title {
+    color: black;
 }
 
-.box-noticia .creditos {
-    color: red;
+.card {
+    background: rgba(255, 255, 0, 0.801) !important;
+    display: grid !important;
+    font-size: 20px;
+    text-align: center !important;
+    color: black;
+    transition: 0.5s !important;
+    position: relative;
+    font-family: "Rubik", sans-serif !important;
 }
 
-div.container {
-    display: grid;
+.card li {
+    background: rgba(255, 255, 0, 0.801) !important;
+    display: grid !important;
+    font-size: 20px;
+    text-align: center !important;
+    color: black;
+    transition: 0.5s !important;
+    position: relative;
+    font-family: "Rubik", sans-serif !important;
 }
 
-#titulo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-a:hover {
-    background-color: rgba(255, 0, 0, 0.5) !important;
+.card img {
+    color: inherit !important;
+    display: block !important;
+    margin: 0 auto;
+    width: max-content;
 }
