@@ -99,7 +99,7 @@ window.onload = function() {
         };
 
         for (i = 0; i < imagens.length; i++) {
-            if (i % 3 == 0 || i == 0) {
+            if (i % 2 == 0 || i == 0) {
                 textoHTML += `
                 <div class="card-group">
             <div class="card mr-2" style="width: 18rem; ">
