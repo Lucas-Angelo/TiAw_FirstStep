@@ -101,30 +101,25 @@ window.onload = function() {
         for (i = 0; i < imagens.length; i++) {
             if (i % 2 == 0 || i == 0) {
                 textoHTML += `
-                <div class="card-group">
-            <div class="card mr-2" style="width: 18rem; ">
-    <img class="card-img-top" src="${imagens[i].imagem}" alt="Card image cap">
+            <div class="card col-sm-12 col-lg-6 ">
+    <img class="card-img-top"  width="250" height="250" src="${imagens[i].imagem}" alt="Card image cap" id="imgCard">
     <div class="card-body">
       <h5 class="card-title">${JSON.parse(txt)[i].title}</h5>
       <p class="card-text">${JSON.parse(txt)[i].content}</p>
     </div>
-  </div>
-  
-
+    </div>
         
             `;
 
             } else {
                 textoHTML += `
-            <div class="card mr-2" style="width: 18rem; ">
-    <img class="card-img-top" src="${imagens[i].imagem}" alt="Card image cap">
+            <div class="card col-sm-12 col-lg-6  ">
+    <img class="card-img-top"  width="250" height="250" src="${imagens[i].imagem}" alt="Card image cap" id="imgCard">
     <div class="card-body">
       <h5 class="card-title">${JSON.parse(txt)[i].title}</h5>
       <p class="card-text">${JSON.parse(txt)[i].content}</p>
     </div>
   </div>
-  </div>
-        
             `;
             }
 

@@ -35,14 +35,36 @@
 
 <body>
     <div class="row ml-3 mr-5 p-1">
-        <div class="col-lg-12">
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-    Adicionar Bons Hábitos
-  </button>
-            <button type="button" class="btn btn-success" id="exibe">
-     Exibir Hábitos adicionados
-  </button>
+                <div class="col-lg-12 col-sm-12">
+                    <!-- Button trigger modal -->
+                    <div class="row d-flex flex-column bd-highlight mb-3 ">
+                    <div class="col-sm-12 p-2 bd-highlight d-flex justify-content-center">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            Adicionar Bons Hábitos
+        </button>
+        </div>
+
+        <div class="col-sm-12 p-2 bd-highlight d-flex justify-content-center">
+                    <a href="habitos.html"> 
+                        <button type="button" class="btn btn-success">
+                            Atualizar
+                        </button>
+                    </a>
+                </div>
+                <div class="col-sm-12 p-2 bd-highlight d-flex justify-content-center">
+
+                        <button type="button" class="btn btn-success" id="exibe">
+            Exibir Hábitos adicionados
+        </button>
+        </div>
+        <div class="col-sm-12 p-2 bd-highlight d-flex justify-content-center">
+
+        <p>
+            <a href="index.html"><img src="images/btn-back.png"></a></p>
+        </div>
+
+        </div>
+
         </div>
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -67,9 +89,9 @@
             </div>
         </div>
 
-        <div class="col-lg-12 ml-3 p-0 mb-3">
-            <div class="card-group">
-                <div class="card">
+        <div class="col-lg-12 ml-5  mb-1">
+            <div class="row mr-0 ml-5">
+                <div class="card col-sm-12 col-lg-6 ">
 
                     <img class="card-img-top" width="250" height="250" src="images2/Agua.jpg" alt="Card image cap">
                     <div class="card-body">
@@ -79,26 +101,43 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card col-sm-12 col-lg-6 ">
 
-                    <img class="card-img-top" width="200" height="200" src="images2/Campeao.jpg" alt="Card image cap">
+                    <img class="card-img-top" width="250" height="250" src="images2/hiking.jpg" alt="Card image cap" id="imgCard">
                     <div class="card-body">
                         <h5 class="card-title">Aja agora, e não depois</h5>
                         <p class="card-text">Saiba combater a procrastinação. Pegue aquilo que você está adiando, marque 15 minutos no cronômetro e comprometa-se a fazer aquela atividade por apenas esse período. Isso vai quebrar a inércia. Depois dos primeiros 15 minutos,
                             você entra no ritmo e consegue continuar.</p>
                     </div>
                 </div>
+
+                <div class="card col-sm-12 col-lg-6 ">
+
+                    <img class="card-img-top" width="250" height="250" src="images2/alimentos.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Coma mais alimentos naturais</h5>
+                        <p class="card-text">Isso é simples, coloque mais alimentos naturais nas suas refeições, escolha aqueles que você gosta mais. Se você for por um caminho mais prazeroso, em pouco tempo suas refeições estarão com muito mais naturais. Isso é importante, não brigue com você, insira mais alimentos naturais que você gosta.</p>
+                    </div>
+                </div>
+
+                <div class="card col-sm-12 col-lg-6 ">
+
+                    <img class="card-img-top" width="250" height="250" src="images2/Campeao.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Busque por inspirações</h5>
+                        <p class="card-text">Uma ótima maneira de adquirir e manter bons hábitos é buscar por referências. Podem ser mentores ou profissionais que você admira, em relação a hábitos específicos. Eles são a prova viva de que com disciplina, os bons resultados chegam. </p>
+                    </div>
+                </div>
+
+
+
+            <div class="row p-0 mr-1 ml-1" id="tela" >
+
+
+
             </div>
 
-
-
-            <div id="tela">
-
-
-
-            </div>
-
-
+        </div>
         </div>
     </div>
 

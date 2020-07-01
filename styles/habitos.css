@@ -17,6 +17,11 @@ body {
 .card-title {
     color: black;
 }
+.card:hover
+{
+    background: #e91e63 !important;
+
+}
 
 .card {
     background: rgba(255, 255, 0, 0.801) !important;
@@ -45,4 +50,10 @@ body {
     display: block !important;
     margin: 0 auto;
     width: max-content;
+}
+
+#imgCard
+{
+    border: 1px solid red;
+    width: 100%;
 }
