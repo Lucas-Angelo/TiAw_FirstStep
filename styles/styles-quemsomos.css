@@ -28,6 +28,7 @@ body {
     transition: 0.5s !important;
     position: relative;
     font-family: "Rubik", sans-serif !important;
+    margin: 10px;
 }
 
 .card li {
