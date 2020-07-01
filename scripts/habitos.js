@@ -99,14 +99,35 @@ window.onload = function() {
         };
 
         for (i = 0; i < imagens.length; i++) {
-            textoHTML += `<div class="card">
-            <img class="card-img-top" width="10" height="200" src="${imagens[i].imagem}" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">${JSON.parse(txt)[i].title}</h5>
-                <p class="card-text">${JSON.parse(txt)[i].content}</p>
-            </div>
-        </div>
+            if (i % 3 == 0 || i == 0) {
+                textoHTML += `
+                <div class="card-group">
+            <div class="card mr-2" style="width: 18rem; ">
+    <img class="card-img-top" src="${imagens[i].imagem}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">${JSON.parse(txt)[i].title}</h5>
+      <p class="card-text">${JSON.parse(txt)[i].content}</p>
+    </div>
+  </div>
+  
+
+        
             `;
+
+            } else {
+                textoHTML += `
+            <div class="card mr-2" style="width: 18rem; ">
+    <img class="card-img-top" src="${imagens[i].imagem}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">${JSON.parse(txt)[i].title}</h5>
+      <p class="card-text">${JSON.parse(txt)[i].content}</p>
+    </div>
+  </div>
+  </div>
+        
+            `;
+            }
+
         }
 
         // Mostrar o código na div tela
