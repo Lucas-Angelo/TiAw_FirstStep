@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Authors" content="Marco Tullio, Lucas Ângelo,  Victor Campos, Vinícius Marini">
+    <link rel="stylesheet" href="styles/habitos.css">
+    <!-- Bootstrap Início -->
+    <link rel="stylesheet" href="/modules/booststrap.css">
+    <!-- CSS do bootstrap -->
+    <script src="/modules/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- JS do bootstrap -->
+    <!-- Bootstrap Fim-->
+
+    <!-- Adicionais Início -->
+    <script src="/modules/jquerry.js"></script>
+    <!-- jQuerry pro JS -->
+
+    <script src="/modules/popper.js"></script>
+    <!-- Addon de JS -->
+
+    <link rel="stylesheet" href="/modules/fontawesomeall.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- FontAwesome adicionais -->
+    <script src="/modules/fontawesome.js" crossorigin="anonymous"></script>
+    <!-- FontAwesome adicionais -->
+
+    <script src="/modules/w3schools.css"></script>
+    <!-- Adicionais Fim  -->
+
+
+    <title>Hábitos</title>
+</head>
+
+<body>
+    <div class="row ml-3 mr-5 p-1">
+                <div class="col-lg-12 col-sm-12">
+                    <!-- Button trigger modal -->
+                    <div class="row d-flex flex-column bd-highlight mb-3 ">
+                    <div class="col-sm-12 p-2 bd-highlight d-flex justify-content-center">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            Adicionar Bons Hábitos
+        </button>
+        </div>
+
+        <div class="col-sm-12 p-2 bd-highlight d-flex justify-content-center">
+                    <a href="habitos.html"> 
+                        <button type="button" class="btn btn-success">
+                            Atualizar
+                        </button>
+                    </a>
+                </div>
+                <div class="col-sm-12 p-2 bd-highlight d-flex justify-content-center">
+
+                        <button type="button" class="btn btn-success" id="exibe">
+            Exibir Hábitos adicionados
+        </button>
+        </div>
+        <div class="col-sm-12 p-2 bd-highlight d-flex justify-content-center">
+
+        <p>
+            <a href="index.html"><img src="images/btn-back.png"></a></p>
+        </div>
+
+        </div>
+
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                    </div>
+                    <div class="modal-body">
+                        <div>Escolha a imagem: <input id="inputImage" type="file" /></div>
+                        <label for="titulo"> Titulo: <input type="text" id="titulo" name="titulo"></label>
+                        <label for="conteudo">Conteudo: <input type="text" id="conteudo" name="conteudo"></label>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" id="btnSalvarImagens">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-12 ml-5  mb-1">
+            <div class="row mr-0 ml-5">
+                <div class="card col-sm-12 col-lg-6 ">
+
+                    <img class="card-img-top" width="250" height="250" src="images2/Agua.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Beba água</h5>
+                        <p class="card-text">A hidratação potencializa a capacidade física, mantendo a atividade cognitiva e a capacidade muscular em sua totalidade. Assim, evita-se as temidas dores de cabeça, cãibras, lesões musculares e ainda pode-se aproveitar os exercícios,
+                            sentindo aquela velha e boa sensação de bem-estar, causada pela liberação de endorfina, entre outros hormônios.</p>
+                    </div>
+                </div>
+
+                <div class="card col-sm-12 col-lg-6 ">
+
+                    <img class="card-img-top" width="250" height="250" src="images2/hiking.jpg" alt="Card image cap" id="imgCard">
+                    <div class="card-body">
+                        <h5 class="card-title">Aja agora, e não depois</h5>
+                        <p class="card-text">Saiba combater a procrastinação. Pegue aquilo que você está adiando, marque 15 minutos no cronômetro e comprometa-se a fazer aquela atividade por apenas esse período. Isso vai quebrar a inércia. Depois dos primeiros 15 minutos,
+                            você entra no ritmo e consegue continuar.</p>
+                    </div>
+                </div>
+
+                <div class="card col-sm-12 col-lg-6 ">
+
+                    <img class="card-img-top" width="250" height="250" src="images2/alimentos.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Coma mais alimentos naturais</h5>
+                        <p class="card-text">Isso é simples, coloque mais alimentos naturais nas suas refeições, escolha aqueles que você gosta mais. Se você for por um caminho mais prazeroso, em pouco tempo suas refeições estarão com muito mais naturais. Isso é importante, não brigue com você, insira mais alimentos naturais que você gosta.</p>
+                    </div>
+                </div>
+
+                <div class="card col-sm-12 col-lg-6 ">
+
+                    <img class="card-img-top" width="250" height="250" src="images2/Campeao.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Busque por inspirações</h5>
+                        <p class="card-text">Uma ótima maneira de adquirir e manter bons hábitos é buscar por referências. Podem ser mentores ou profissionais que você admira, em relação a hábitos específicos. Eles são a prova viva de que com disciplina, os bons resultados chegam. </p>
+                    </div>
+                </div>
+
+
+
+            <div class="row p-0 mr-1 ml-1" id="tela" >
+
+
+
+            </div>
+
+        </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="scripts/habitos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

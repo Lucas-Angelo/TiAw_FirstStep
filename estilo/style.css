@@ -10,7 +10,7 @@ body{
     justify-content: center;
     align-content: center;
     min-height: 100vh;
-    background: rgb(0, 0, 0);
+    background: rgb(209, 209, 54);
 }
 .container .box .content #logofirst{
     max-width: 50%;
@@ -26,7 +26,7 @@ body{
     padding: 10px;
 }
 .container .box{
-    background: #FFFF66;
+    background: rgba(255, 255, 0, 0.801);
     padding: 20px;
     display: grid;
     font-size: 20px;
@@ -153,4 +153,7 @@ a#dica button{
 }
 .box2 img.basquete{
     max-width: 100%;
+}
+img#natacao{
+    max-width: 70%;
 }
