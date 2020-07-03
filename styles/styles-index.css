@@ -1,3 +1,257 @@
-body{
-    background-color: #ada800 !important;
+html{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #c7c000a1 !important;
+    align-items: center;
+    align-content: center;
+}
+
+a:hover, a:visited, a:link, a:active{
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+.card{
+    margin: 8px;
+    border: black solid 2px !important;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 0, 0.219) !important;
+    align-items: center !important;
+    align-content: center !important;
+    padding: 0;
+}
+
+#bannerExercitar{
+    height: 28vh;
+    width: auto;
+}
+
+.imgsInicio{
+    min-width: 100%;
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+    html{
+        font-size: 28px;
+    }
+    #bannerExercitar{
+        margin: 100px 0 0 0;
+        height: 120px;
+        width: auto;
+    }
+    #textBanner{
+        margin-bottom: 60px;
+    }
+    
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+
+    #bannerExercitar{
+        margin: 100px 0 0 0;
+        height: 120px;
+        width: auto;
+    }
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+
+    #bannerExercitar{
+        margin: 4px 0 0 0 !important;
+        min-height: 100px;
+        width: auto;
+    }
+    #textBanner{
+        margin-bottom: 5px;
+    }
+    .imgsInicio{
+        height: 20vh;
+    }
+
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+    #bannerExercitar{
+        margin: 100px 0 0 0;
+        height: 120px;
+        width: auto;
+    }
+    #textBanner{
+        margin-bottom: 80px;
+    }
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+
+    #bannerExercitar{
+        margin: 100px 0 0 0;
+        height: 120px;
+        width: auto;
+    }
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+
+    #bannerExercitar{
+        margin: 8px 0 0 0;
+        height: 120px;
+        width: auto;
+    }
+    #textBanner{
+        margin-bottom: 0;
+    }
+    .imgsInicio{
+        height: 20vh;
+    }
+
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    #bannerExercitar{
+        margin: 80px 0 0 0;
+        height: 120px;
+        width: auto;
+    }
+    #textBanner{
+        margin-bottom: 40px;
+    }
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+    #bannerExercitar{
+        margin: 80px 0 0 0;
+        height: 120px;
+        width: auto;
+    }
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+    #bannerExercitar{
+        margin: 8px 0 0 0;
+        height: 120px;
+        width: auto;
+    }
+    #textBanner{
+        margin-bottom: 0;
+    }
+    .imgsInicio{
+        height: 20vh;
+    }
+
+}
+
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    html{
+        font-size: 38px;
+    }
+    #bannerExercitar{
+        margin: 140px 0 70px 0;
+        height: 120px;
+        width: auto;
+    }
+    #textBanner{
+        margin-bottom: 80px;
+    }
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    html{
+        font-size: 20px;
+    }
+    #bannerExercitar{
+        height: 12.5vh;
+        width: auto;
+    }
+    #textBanner{
+        margin-bottom: 0;
+    }
+    .imgsInicio{
+        height: 20vh;
+    }
+
 }
