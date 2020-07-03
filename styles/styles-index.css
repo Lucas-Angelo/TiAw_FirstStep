@@ -4,7 +4,7 @@ html{
 }
 
 body {
-    background-color: #c7c000a1 !important;
+    background-color: rgb(102, 255, 204) !important;
     align-items: center;
     align-content: center;
 }
@@ -19,7 +19,7 @@ a:hover, a:visited, a:link, a:active{
     margin: 8px;
     border: black solid 2px !important;
     border-radius: 8px;
-    background-color: rgba(255, 255, 0, 0.219) !important;
+    background-color: rgb(255, 255, 102) !important;
     align-items: center !important;
     align-content: center !important;
     padding: 0;
@@ -87,7 +87,7 @@ a:hover, a:visited, a:link, a:active{
         margin-bottom: 5px;
     }
     .imgsInicio{
-        height: 20vh;
+        min-height: 30vh;
     }
 
 }
