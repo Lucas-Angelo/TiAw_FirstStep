@@ -9,9 +9,13 @@ body {
     align-content: center;
 }
 
+.main{
+    margin-top: 5vh;
+}
+
 a:hover, a:visited, a:link, a:active{
     font-weight: bold;
-    color: black;
+    color: inherit;
     text-decoration: none;
 }
 
@@ -25,6 +29,10 @@ a:hover, a:visited, a:link, a:active{
     padding: 0;
 }
 
+.card:hover{
+    background: #e91e63 !important;
+}
+
 #bannerExercitar{
     height: 28vh;
     width: auto;
@@ -33,6 +41,63 @@ a:hover, a:visited, a:link, a:active{
 .imgsInicio{
     min-width: 100%;
 }
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(251, 255, 0);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align:center;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  
+  }
+  
+  .sidenav a:hover{
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgb(9, 104, 148);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  
+  .barraDeProgresso{
+    align-items: center;
+    align-content: center;
+    margin: 1% 5%;
+  }
 
 /* ----------- iPhone X ----------- */
 
@@ -87,7 +152,7 @@ a:hover, a:visited, a:link, a:active{
         margin-bottom: 5px;
     }
     .imgsInicio{
-        height: 20vh;
+        min-height: 30vh;
     }
 
 }

@@ -21,7 +21,7 @@
         </script>
     <!-- Bootstrap Fim-->
 
-    <link rel="stylesheet" href="/styles/styles-Search.css" />
+    <link rel="stylesheet" href="/styles/styles-tempo.css" />
 
     <script src="https://use.fontawesome.com/1324f58edc.js"></script>
 
@@ -50,17 +50,17 @@
                         <br>
                         <a href="/pages/Login.html">Fazer login/Cadastre-se</a>
                         <br>
-                        <a href="/pages/feedback.html">Deixe o seu feedback!</a>
+                        <a href="/pages/feedback.html">Deixe o seu feed back!</a>
                     </div>
                     <div class="barraDeProgresso">
 
-                        <h1>Sua barra de progresso contra preguiça!</h1>
+                        <h1>Seu progresso de gestão do tempo!</h1>
                         <br>
 
                         <!-- Div For Progress Bar -->
                         <div class="progress">
-                            <div class="progress-bar progress-bar-striped" role="progressbarPreguica" style="width: 0%;"
-                                aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="progressbarPreguica">0%</div>
+                            <div class="progress-bar progress-bar-striped" role="progressbarTempo" style="width: 0%;"
+                                aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="progressbarTempo">0%</div>
                         </div>
 
                         <br>
@@ -84,7 +84,7 @@
                             <div class="d-flex justify-content-around">
 
                                 <div>
-                                    <a href="/index.html">
+                                    <a href="/pages/encontreesporte.html">
                                         <img src="/images/btn-back.png" alt="" style="height: 4vh;">
                                     </a>
                                 </div>
@@ -94,35 +94,21 @@
                                 <div>
                                     <a href="/pages/Login.html">
                                         <img src="/images/login.png" alt="" style="height: 4vh;">
-                                   </a>
+                                    </a>
                                 </div>
 
                             </div>
 
-                            <div id="imgGrande">
-                                <img src="/images/problemas.png" class="img-fluid" alt="Responsive image">
-                            </div>
+                            <div class="row">
+                                <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="text-align: center;">
 
-                            <div id="formulario">
-                                <h4>Marque a alternativa chave que está te prejudicando:</h4>
-                                <div class="d-flex justify-content-center">
-                                    <form>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="Preguica" />
-                                            <label class="custom-control-label" for="Preguica"><a>Preguiça</a></label>
-                                        </div>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="Tempo" />
-                                            <label class="custom-control-label" for="Tempo"><a>Tempo</a></label>
-                                        </div>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="Dinheiro" />
-                                            <label class="custom-control-label" for="Dinheiro"><a>Dinheiro</a></label>
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="d-flex justify-content-center">
-                                    <button type="submit" id="resultado" class="btn btn-primary">Encontre sua solução</button>
+                                    <div id="youtubeVideo">
+                                        <h1>Gerencie o seu tempo!</h1>
+                                        <iframe width="560" style="border-width:20px;" height="315" src="https://www.youtube.com/embed/YTSXXdN3Th8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                    
+                                    <a><button type="button" class="btn btn-primary" onclick="increment()">Clique aqui quando concluir a tarefa</button></a>
+
                                 </div>
                             </div>
 
@@ -155,44 +141,9 @@
         });
     </script>
 
-    <script>
-        var Preguiça = window.document.getElementById("Preguica");
-        var Tempo = window.document.getElementById("Preguica");
-        var Dinheiro = window.document.getElementById("Preguica");
+    <script src="/scripts/tempo/progressBar2.js"></script>
+    
 
-        var Preguica = document.getElementById("Preguica");
-        var Tempo = document.getElementById("Tempo");
-        var Dinheiro = document.getElementById("Dinheiro");
-
-        document.getElementById("resultado").onclick = function () {
-            if (Preguiça.checked) {
-                window.location.href = "preguicaLeveis/preguica-1.html";
-            } else if (Tempo.checked) {
-                window.location.href = "Tempoleveis/Tempo-1.html";
-            } else if (Dinheiro.checked) {
-                window.location.href = "dinheiro.html";
-            }
-            if (
-                (Preguica.checked && Tempo.checked) ||
-                (Preguica.checked && Dinheiro.checked) ||
-                (Dinheiro.checked && Tempo.checked) ||
-                (Preguica.checked && Tempo.checked && Dinheiro.checked)
-            ) {
-                alert("Escolha somente uma opção!");
-                window.location.href = "encontreesporte.html";
-            }
-            if (
-                (Preguica.checked == false) &&
-                (Dinheiro.checked == false) &&
-                (Tempo.checked == false)
-            ) {
-                alert("Selecione uma opção!");
-                window.location.href = "encontreesporte.html";
-            }
-        };
-    </script>
-
-    <script src="/scripts/preguica/progressBar.js"></script>
 </body>
 
 </html>
