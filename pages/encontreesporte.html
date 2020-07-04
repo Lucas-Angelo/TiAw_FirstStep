@@ -5,22 +5,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="Authors" content="Marco Tullio, Lucas Ângelo,  Victor Campos, Vinícius Marini" />
-    <link rel="stylesheet" href="/styles/styles-Search.css" />
-    <title>Encontre seu esporte!</title>
+    <title>Encontre sua solução!</title>
 
     <!-- Bootstrap Início -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
     <!-- Bootstrap Fim-->
+
+    <link rel="stylesheet" href="/styles/styles-Search.css" />
 
     <script src="https://use.fontawesome.com/1324f58edc.js"></script>
 
@@ -32,86 +33,114 @@
 
 <body>
 
-    <div class="row">
-        <div class="col-sm-12 col-md-12 col-lg-12 m-0 p-0 mt-2 mb-2 ">
-            <div id="mySidenav" class="sidenav" id="bordarA">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <div>
-                    <a href="/index.html">Home</a>
-                    <br>
-                    <a href="/pages/pros.html">Motivos para lutar contra o sedentarismo</a>
-                    <br>
-                    <a href="/pages/opcoes.html">Espostes mais praticados no Brasil</a>
-                    <br>
-                    <a href="/pages/quemsomos.html">Quem somos</a>
-                    <br>
-                    <a href="/pages/Login.html">Fazer login/Cadastre-se</a>
-                    <br>
-                    <a href="/pages/feedback.html">Deixe o seu feed back!</a>
-                </div>
-                <div class="barraDeProgresso">
+    <div class="container-fluid">
 
-                    <h1>Sua barra de progresso de atividades!</h1>
-                    <br>
-
-                    <!-- Div For Progress Bar -->
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
-                            aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="progressbar">0%</div>
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div>
+                        <a href="/index.html">Home</a>
+                        <br>
+                        <a href="/pages/pros.html">Motivos para lutar contra o sedentarismo</a>
+                        <br>
+                        <a href="/pages/opcoes.html">Espostes mais praticados no Brasil</a>
+                        <br>
+                        <a href="/pages/quemsomos.html">Quem somos</a>
+                        <br>
+                        <a href="/pages/Login.html">Fazer login/Cadastre-se</a>
+                        <br>
+                        <a href="/pages/feedback.html">Deixe o seu feed back!</a>
                     </div>
+                    <div class="barraDeProgresso">
 
-                    <br>
-                    <!-- Buttons -->
-                    <button type="button" class="btn btn-primary" onclick="increment()">Adicionar tarefa concluída</button>
-                    <button type="button" class="btn btn-success" onclick="decrement()">Remover uma tarefa</button>
+                        <h1>Sua barra de progresso de atividades!</h1>
+                        <br>
 
-                    <p id="value"> </p>
-                    <!-- End of Container -->
+                        <!-- Div For Progress Bar -->
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="progressbar">0%</div>
+                        </div>
+
+                        <br>
+                        <!-- Buttons -->
+                        <button type="button" class="btn btn-primary" onclick="increment()">Adicionar tarefa
+                            concluída</button>
+                        <button type="button" class="btn btn-success" onclick="decrement()">Remover uma tarefa</button>
+
+                        <p id="value"> </p>
+                        <!-- End of Container -->
+                    </div>
                 </div>
             </div>
         </div>
+
+        <main>
+
+            <div class="row m-1 p-2">
+
+                <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+
+                    <div class="row">
+                        <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+
+                            <div class="d-flex justify-content-around">
+
+                                <div>
+                                    <a href="/index.html">
+                                        <img src="/images/btn-back.png" alt="" style="height: 4vh;">
+                                    </a>
+                                </div>
+                                <div>
+                                    <button class="openbtn" onclick="openNav()">☰</button>
+                                </div>
+                                <div>
+                                    <a href="/pages/Login.html">
+                                        <img src="/images/login.png" alt="" style="height: 4vh;">
+                                   </a>
+                                </div>
+
+                            </div>
+
+                            <div id="imgGrande">
+                                <img src="/images/problemas.png" class="img-fluid" alt="Responsive image">
+                            </div>
+
+                            <div id="formulario">
+                                <h4>Marque a alternativa chave que está te prejudicando:</h4>
+                                <div class="d-flex justify-content-center">
+                                    <form>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="Preguica" />
+                                            <label class="custom-control-label" for="Preguica"><a>Preguiça</a></label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="Tempo" />
+                                            <label class="custom-control-label" for="Tempo"><a>Tempo</a></label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="Dinheiro" />
+                                            <label class="custom-control-label" for="Dinheiro"><a>Dinheiro</a></label>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <button type="submit" id="resultado" class="btn btn-primary">Encontre sua solução</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </main>
+
     </div>
-
-    <main class="m-0 p-0 mt-2 mb-2 ml-5 mr-3 dentro">
-        <div class="m-0 p-0 mt-1 mb-1">
-            <div class="row mr-0 p-2">
-                <div class="col-sm-12 col-md-12 col-lg-12">
-                    <button class="openbtn mr-4" onclick="openNav()">☰</button>
-                    <div class="ajusteing ml-5">
-                        <div class="d-flex justify-content-center ajusteing"><a class="voltar" href="/index.html"><img
-                                    src="/images/btn-back.png" height="25px">Voltar para
-                                Home</a></div>
-                    </div>
-                    <div class="d-flex justify-content-center">
-                        <img id="logoinicio" src="/images/logosemfundo.png" alt="logo FirstStep" width="80%"
-                            height="400px" />
-                    </div>
-                    <h4>Marque a alternativa chave que te impede de se exercitar:</h4>
-                    <br>
-                    <div class="d-flex justify-content-center alternativas">
-                        <form>
-                            <div class="custom-control custom-checkbox alternativa mb-1">
-                                <input type="checkbox" class="custom-control-input" id="Preguica" />
-                                <label class="custom-control-label" for="Preguica"><a>Preguiça</a></label>
-                            </div>
-                            <div class="custom-control custom-checkbox alternativa mb-1">
-                                <input type="checkbox" class="custom-control-input" id="Tempo" />
-                                <label class="custom-control-label" for="Tempo"><a>Tempo</a></label>
-                            </div>
-                            <div class="custom-control custom-checkbox alternativa">
-                                <input type="checkbox" class="custom-control-input" id="Dinheiro" />
-                                <label class="custom-control-label" for="Dinheiro"><a>Dinheiro</a></label>
-                            </div>
-                        </form>
-                    </div>
-                    <br>
-                    <div class="d-flex justify-content-center">
-                        <button type="submit" id="resultado" class="btn btn-primary">Escontre seu Esporte</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
 
     <script>
         function openNav() {
