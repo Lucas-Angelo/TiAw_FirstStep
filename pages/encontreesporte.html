@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Authors" content="Marco Tullio, Lucas Ângelo,  Victor Campos, Vinícius Marini" />
+    <title>Encontre sua solução!</title>
+
+    <!-- Bootstrap Início -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+    <!-- Bootstrap Fim-->
+
+    <link rel="stylesheet" href="/styles/styles-Search.css" />
+
+    <script src="https://use.fontawesome.com/1324f58edc.js"></script>
+
+    <script src="/modules/w3schools.css"></script>
+    <!-- Adicionais Fim  -->
+
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div>
+                        <a href="/index.html">Home</a>
+                        <br>
+                        <a href="/pages/pros.html">Motivos para lutar contra o sedentarismo</a>
+                        <br>
+                        <a href="/pages/opcoes.html">Espostes mais praticados no Brasil</a>
+                        <br>
+                        <a href="/pages/quemsomos.html">Quem somos</a>
+                        <br>
+                        <a href="/pages/Login.html">Fazer login/Cadastre-se</a>
+                        <br>
+                        <a href="/pages/feedback.html">Deixe o seu feed back!</a>
+                    </div>
+                    <div class="barraDeProgresso">
+
+                        <h1>Sua barra de progresso de atividades!</h1>
+                        <br>
+
+                        <!-- Div For Progress Bar -->
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="progressbar">0%</div>
+                        </div>
+
+                        <br>
+                        <!-- Buttons -->
+                        <button type="button" class="btn btn-primary" onclick="increment()">Adicionar tarefa
+                            concluída</button>
+                        <button type="button" class="btn btn-success" onclick="decrement()">Remover uma tarefa</button>
+
+                        <p id="value"> </p>
+                        <!-- End of Container -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <main>
+
+            <div class="row m-1 p-2">
+
+                <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+
+                    <div class="row">
+                        <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+
+                            <div class="d-flex justify-content-around">
+
+                                <div>
+                                    <a href="/index.html">
+                                        <img src="/images/btn-back.png" alt="" style="height: 4vh;">
+                                    </a>
+                                </div>
+                                <div>
+                                    <button class="openbtn" onclick="openNav()">☰</button>
+                                </div>
+                                <div>
+                                    <a href="/pages/Login.html">
+                                        <img src="/images/login.png" alt="" style="height: 4vh;">
+                                   </a>
+                                </div>
+
+                            </div>
+
+                            <div id="imgGrande">
+                                <img src="/images/problemas.png" class="img-fluid" alt="Responsive image">
+                            </div>
+
+                            <div id="formulario">
+                                <h4>Marque a alternativa chave que está te prejudicando:</h4>
+                                <div class="d-flex justify-content-center">
+                                    <form>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="Preguica" />
+                                            <label class="custom-control-label" for="Preguica"><a>Preguiça</a></label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="Tempo" />
+                                            <label class="custom-control-label" for="Tempo"><a>Tempo</a></label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="Dinheiro" />
+                                            <label class="custom-control-label" for="Dinheiro"><a>Dinheiro</a></label>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <button type="submit" id="resultado" class="btn btn-primary">Encontre sua solução</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
+    <script>
+        $("input:checkbox").click(function () {
+            var bol = $("input:checkbox:checked").length >= 1;
+            $("input:checkbox").not(":checked").attr("disabled", bol);
+        });
+    </script>
+
+    <script>
+        var Preguiça = window.document.getElementById("Preguica");
+        var Tempo = window.document.getElementById("Preguica");
+        var Dinheiro = window.document.getElementById("Preguica");
+
+        var Preguica = document.getElementById("Preguica");
+        var Tempo = document.getElementById("Tempo");
+        var Dinheiro = document.getElementById("Dinheiro");
+
+        document.getElementById("resultado").onclick = function () {
+            if (Preguiça.checked) {
+                window.location.href = "preguica.html";
+            } else if (Tempo.checked) {
+                window.location.href = "tempo.html";
+            } else if (Dinheiro.checked) {
+                window.location.href = "dinheiro.html";
+            }
+            if (
+                (Preguica.checked && Tempo.checked) ||
+                (Preguica.checked && Dinheiro.checked) ||
+                (Dinheiro.checked && Tempo.checked) ||
+                (Preguica.checked && Tempo.checked && Dinheiro.checked)
+            ) {
+                alert("Escolha somente uma opção!");
+                window.location.href = "encontreesporte.html";
+            }
+            if (
+                (Preguica.checked == false) &&
+                (Dinheiro.checked == false) &&
+                (Tempo.checked == false)
+            ) {
+                alert("Selecione uma opção!");
+                window.location.href = "encontreesporte.html";
+            }
+        };
+    </script>
+
+    <script src="/scripts/progressBar.js"></script>
+</body>
+
+</html>

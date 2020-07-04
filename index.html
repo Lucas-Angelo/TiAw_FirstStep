@@ -5,124 +5,138 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Authors" content="Marco Tullio, Lucas Ângelo,  Victor Campos, Vinícius Marini">
-    <link rel="stylesheet" href="styles/styles-index.css">
 
     <!-- Bootstrap Início -->
-    <link rel="stylesheet" href="/modules/booststrap.css">
-    <!-- CSS do bootstrap -->
-    <script src="/modules/bootstrap.js"></script>
-    <!-- JS do bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <!-- Bootstrap Fim-->
 
-    <!-- Adicionais Início -->
-    <script src="/modules/jquerry.js"></script>
-    <!-- jQuerry pro JS -->
+    <link rel="stylesheet" href="styles/styles-index.css">
 
-    <script src="/modules/popper.js"></script>
-    <!-- Addon de JS -->
+    <script src="https://use.fontawesome.com/1324f58edc.js"></script>
 
-    <link rel="stylesheet" href="/modules/fontawesomeall.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <!-- FontAwesome adicionais -->
-    <script src="/modules/fontawesome.js" crossorigin="anonymous"></script>
-    <!-- FontAwesome adicionais -->
-
-    <script src="/modules/w3schools.css"></script>
-    <!-- Adicionais Fim  -->
 
 
     <title>FirstStep</title>
 </head>
 
 <body>
-    <!--Row Principal-->
-    <div class="container-fluid row m-0 p-0">
-        <div class="col-sm-12 col-md-9 col-lg-9">
 
-            <div class="row m-0 p-0">
-                <div class="col-md-12 col-sm-12-col-lg-12 m-0 p-0 mt-0">
-                    <!--Row do card First Step-->
-                    <div class="row m-0 p-0">
-                        <div class="col-md-12 col-sm-12-col-lg-12 ml-3 p-0 mb-3 ">
-                            <div class="card ativado" style="max-width: 100%; ">
-                                <a class="removeAncora" href="encontreesporte.html">
-                                    <img class="card-img-top" src="images/logosemfundo.png" id="imgPrincipal" alt="Card image cap" style="max-width: 80%;">
+    <main>
+
+        <div class="container-fluid">
+
+            <div class="row main">
+                <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+
+                    <!-- Início: Linha de cima -->
+                    <div class="row">
+
+                        <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                            <div class="card">
+                                <a>
+                                    <img src="images/logosemfundo.png" class="img-fluid" alt="Responsive image"
+                                        style="height: 40vh;">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                            <div class="card">
+                                <a href="pages/encontreesporte.html">
+                                    <img id="bannerExercitar" src="images/exercitar.png" class="img-fluid" alt="Responsive image">
                                     <div class="card-body">
-                                        <h5 class="card-title">Encontre seu esporte</h5>
-                                        <p class="card-text"></p>
+                                        <h5 id="textBanner" class="card-title text-center">Lute contra o sedentarismo</h5>
                                     </div>
                                 </a>
                             </div>
                         </div>
-                    </div>
-                    <!--Fim do Row do card First Step-->
 
-
-                    <!--Area dos 3 cards-->
-
-                    <div class="row p-0 ml-3">
-                        <div class="col-md-4 col-sm-12 col-lg-4 mt-0 ">
-                            <a class="removeAncora" href="quemsomos.html">
-                                <div class="card ativado  mt-0" style="width: 100%;">
-                                    <img class="card-img-top" src="images/equipe.png" alt="Card image cap" style="width: 45%;">
+                        <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                            <div class="card">
+                                <a href="pages/opcoes.html">
+                                    <img src="images/player.png" class="img-fluid imgsInicio" alt="Responsive image"
+                                        style="height: 24vh; padding: 25px;">
                                     <div class="card-body">
-                                        <h5 class="card-title">Quem somos - Conheça nossa equipe! </h5>
-                                        <p class="card-text"></p>
+                                        <h5 id="textBanner" class="card-title text-center">Esportes mais praticados do Brasil</h5>
                                     </div>
-                                </div>
-                            </a>
-
-                        </div>
-                        <div class="col-md-4 col-sm-12 col-lg-4 mt-0 ">
-                            <a class="desativado" href="habitos.html" alt="PÁGINA EM CONSTRUÇÃO">
-                                <div class="card ativado mt-0" style="width: 100%;">
-                                    <img class="card-img-top" src="images/produtividade.png" alt="Card image cap" style="width: 45%;">
-                                    <div class="card-body">
-                                        <h5 class="card-title"><span>Organize sua vida - Mude seus hábitos</span></h5>
-                                        <p class="card-text"></p>
-                                    </div>
-                                </div>
-                            </a>
-
-                        </div>
-                        <div class="col-md-4 col-sm-12 col-lg-4 mt-0 ">
-                            <a class="removeAncora" href="pros.html">
-                                <div class="card ativado  mt-0" style="width: 100%;">
-                                    <img class="card-img-top" src="images/esteira.png" alt="Card image cap" style="width: 45%;">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Por que abandonar o sedentarismo?</h5>
-                                        <p class="card-text"></p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!--Fim da Area dos 3 cards-->
-                </div>
-            </div>
-
-        </div>
-        <!--Card lateral-->
-
-        <div class="col-md-3 col-sm-12 col-lg-3">
-            <div class="row cardsSecundarios ultimo mt-0 p-0">
-                <div class="col-12">
-                    <a class="removeAncora ativado" href="opcoes.html">
-                        <div class="card ativado lateral" style="width: 100%;">
-                            <img class="card-img-top mt-5" id="imgLateral" src="images/player.png" alt="Card image cap" style="max-width: auto;">
-                            <div class="card-body">
-                                <h5 class="card-title">Esportes mais praticados do Brasil.</h5>
-                                <p class="card-text"></p>
+                                </a>
                             </div>
                         </div>
-                    </a>
+
+                    </div>
+                    <!-- Fim: Linha de cima -->
+
+                    <!-- Início: Linha de baixo -->
+                    <div class="row">
+
+                        <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                            <div class="card">
+                                <a href="pages/quemsomos.html">
+                                    <img src="images/equipe.png" class="img-fluid imgsInicio" alt="Responsive image"
+                                        style="height: 24vh; padding: 18px;">
+                                    <div class="card-body">
+                                        <h5 id="textBanner" class="card-title text-center">Conheça nossa equipe!</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                            <div class="card">
+                                <a href="pages/habitos.html">
+                                    <img src="images/produtividade.png" class="img-fluid imgsInicio" alt="Responsive image"
+                                        style="height: 24vh; padding: 18px;">
+                                    <div class="card-body">
+                                        <h5 id="textBanner" class="card-title text-center">Organize sua vida - Mude seus hábitos</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                            <div class="card">
+                                <a href="pages/opcoes.html">
+                                    <img src="images/esteira.png" class="img-fluid imgsInicio" alt="Responsive image"
+                                        style="height: 24vh; padding: 18px;">
+                                    <div class="card-body">
+                                        <h5 id="textBanner" class="card-title text-center">Por que abandonar o sedentarismo?</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                            <div class="card">
+                                <a href="pages/Login.html">
+                                    <img src="images/lock.png" class="img-fluid imgsInicio" alt="Responsive image"
+                                        style="height: 24vh; padding: 18px;">
+                                    <div class="card-body">
+                                        <h5 id="textBanner" class="card-title text-center">Entre na sua conta - Login / Cadastro</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Fim: Linha de baixo -->
+
                 </div>
             </div>
-            </a>
-            <!--Fim do Card lateral-->
 
         </div>
-    </div>
-    <!--Fim do Row Principal-->
+
+    </main>
+
+</body>
 
 </html>
