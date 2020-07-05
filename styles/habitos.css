@@ -19,7 +19,7 @@ body {
 }
 
 .card {
-    background: rgba(255, 255, 0, 0.801) !important;
+    background-color: rgb(255, 255, 102) !important;
     padding: 12px !important;
     display: grid;
     font-size: 20px;
@@ -31,12 +31,6 @@ body {
 
 .card:hover {
     background: #e91e63 !important;
-}
-
-.container .box img {
-    position: relative;
-    max-width: 100px;
-    margin-bottom: 10px;
 }
 
 @media (max-width: 991px) {
