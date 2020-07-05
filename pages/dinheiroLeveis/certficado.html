@@ -50,20 +50,45 @@
                         <br>
                         <a href="/pages/Login.html">Fazer login/Cadastre-se</a>
                         <br>
-                        <a href="/pages/feedback.html">Deixe o seu feed back!</a>
+                        <a href="/pages/feedback.html">Deixe o seu feedback!</a>
                     </div>
                     <div class="barraDeProgresso">
 
-                        <h1>Seu progresso de Treinos!</h1>
-                        <br>
+                        <div class="barraDeProgresso">
 
-                        <!-- Div For Progress Bar -->
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped" role="progressbarDinheiro" style="width: 0%;"
-                                aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="progressbarDinheiro">0%</div>
-                        </div>
-
-                        <br>
+                            <h1>Sua barra de progresso contra preguiça!</h1>
+                            <br>
+    
+                            <!-- Div For Progress Bar -->
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped" role="progressbarPreguica" style="width: 0%;"
+                                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="progressbarPreguica">0%</div>
+                            </div>
+    
+                            <br>
+                            <h1>Sua barra de gestão de tempo!</h1>
+                            <br>
+    
+                            <!-- Div For Progress Bar -->
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped" role="progressbarTempo" style="width: 0%;"
+                                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="progressbarTempo">0%</div>
+                            </div>
+                            
+    
+                            <br>
+                            <h1>Seu progresso de Treinos!</h1>
+                            <br>
+    
+                            <!-- Div For Progress Bar -->
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped" role="progressbarDinheiro" style="width: 0%;"
+                                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="progressbarDinheiro">0%</div>
+                            </div>
+    
+                            <br>
+    
+                            <br>
 
                         <p id="value"> </p>
                         <!-- End of Container -->
@@ -84,7 +109,7 @@
                             <div class="d-flex justify-content-around">
 
                                 <div>
-                                    <a href="/pages/dinheiroLeveis/Dinheiro-1.html">
+                                    <a href="/pages/encontreesporte.html">
                                         <img src="/images/btn-back.png" alt="" style="height: 4vh;">
                                     </a>
                                 </div>
@@ -99,19 +124,23 @@
 
                             </div>
 
-                            <div class="row">
-                                <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="text-align: center;">
+                            <div class="row mt-3">
+                                <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"
+                                    style="text-align: center;">
+
+                                    <h1 class="mt-2 mb-3">CERTIFICADO</h1>
+                                    <div class="d-flex justify-content-center">
+                                        <img class="dinheiroimg" src="/images/certificado.png" alt="Card image cap">
+                                    </div>
                                     <br>
-                             
-                                    <img src="/images/alongamento.png" class="alongar" style="max-width: 100px;" alt="logo FirstStep">
-                                  
-                                    <div id="youtubeVideo">
-                                        <h1>Vamos nos alongar?</h1>
-                                        <iframe width="100%" style="max-width: 715px;" height="315" src="https://www.youtube.com/embed/BN8ppSZjJeI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                              
-                                </div>
-                                    
-                                    <a><button type="button" class="btn btn-primary" onclick="increment()">Clique aqui quando concluir a tarefa</button></a>
+                                      <div style="text-align: center;" >
+                                        <p>"Todo o seu esforço valeu a pena. Este caminho certamente não foi fácil, mas
+                                            você superou qualquer dificuldade, chegou até aqui e merece sentir o prazer
+                                            da vitória."</p>
+                                                <h2>Parabéns</h2>
+                                        <a href="/index.html"><button type="button" class="btn btn-primary">Volte para o menu principal</button></a>
+
+                                    </div>
 
                                 </div>
                             </div>
@@ -144,9 +173,9 @@
             $("input:checkbox").not(":checked").attr("disabled", bol);
         });
     </script>
-
-    <script src="/scripts/dinheiro/progressBar2.js"></script>
-
+        <script src="/scripts/preguica/progressBar.js"></script>
+        <script src="/scripts/tempo/progressBar.js"></script>
+        <script src="/scripts/dinheiro/progressBar.js"></script>
 </body>
 
 </html>

@@ -30,7 +30,7 @@ function increment() {
         setProgress(0);
 	}
 	setTimeout(function() {
-		window.location.replace("/pages/tempoLeveis/certificado");
+		window.location.replace("/pages/dinheiroLeveis/certficado.html");
 	}, 500);
 }
 
