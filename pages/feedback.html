@@ -7,11 +7,44 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cadastro de Contatos</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="feedeback.css">
+    <link rel="stylesheet" href="/styles/feedeback.css">
 </head>
 
 <body onload="init()">
-    <h1>SEU FEEDBACK É IMPORTANTE PARA NÓS</h1>
+    <main>
+        <div class="row m-1 p-2">
+
+            <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+
+                <div class="row">
+                    <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+
+                        <div class="d-flex justify-content-around">
+
+                            <div>
+                                <a href="/pages/encontreesporte.html">
+                                    <img src="/images/btn-back.png" alt="" style="height: 4vh;">
+                                </a>
+                            </div>
+                            <div>
+                                <h1 class="text-center text-info">SEU FEEDBACK É IMPORTANTE PARA NÓS</h1>
+                            </div>
+                            <div class="form-group text-left">
+                                <a href="/pages/Login.html">
+                                    <img src="/images/login.png" alt="" style="height: 4vh;">
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+    </main>
+
+    <h1></h1>
 
     <div class="container">
         <div class="row">
@@ -39,7 +72,7 @@
                 <div class="col-sm-6">
                     <label for="inputCategoria">Categoria</label>
                     <input type="text" class="form-control" id="inputCategoria" required
-                        placeholder="Informe a categoria">
+                        placeholder="Ex:Esporte,Tempo...">
                 </div>
             </div>
             <div class="form-group row">
@@ -95,7 +128,7 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="feedback.js"></script>
+    <script src="/scripts/feedback.js"></script>
     <script>
         function exibeContatos() {
             // Remove todas as linhas do corpo da tabela
