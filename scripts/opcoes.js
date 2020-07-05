@@ -104,7 +104,7 @@ window.onload = function() {
     
             <div class="box">
                 <div class="content">
-                  <a href="index.html"><img src="${imagens[i].imagem}"></a>
+                  <a href="${JSON.parse(txt)[i].content}"><img src="${imagens[i].imagem}"></a>
                   <p>${JSON.parse(txt)[i].title}</p>
                  </div>
              </div>
