@@ -12,7 +12,7 @@ body {
     justify-content: center !important;
     align-content: center !important;
     min-height: 100vh !important;
-    background: rgb(209, 209, 54) !important;
+    background-color: rgb(102, 255, 204) !important;
 }
 
 .card-title {

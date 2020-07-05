@@ -11,16 +11,15 @@ body {
     justify-content: center !important;
     align-content: center !important;
     min-height: 100vh !important;
-    background: rgb(209, 209, 54) !important;
+    background-color: rgb(102, 255, 204) !important;
 }
 
 .card-title {
     color: black;
 }
-.card:hover
-{
-    background: #e91e63 !important;
 
+.card:hover {
+    background: #e91e63 !important;
 }
 
 .card {
@@ -52,8 +51,7 @@ body {
     width: max-content;
 }
 
-#imgCard
-{
+#imgCard {
     border: 1px solid red;
     width: 100%;
 }
