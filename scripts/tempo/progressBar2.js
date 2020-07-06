@@ -21,17 +21,10 @@ setProgressOnLoad ();
 
 function increment() {
 	var i = getProgress();
-	if(i < 100){
-		i = parseInt(i)+50;
-		setProgress(i);	
-		
-	}else{
-        alert("Meta concluída! Resetando progresso...");
-        setProgress(0);
-	}
 	setTimeout(function() {
 		window.location.replace("/pages/dinheiroLeveis/certficado.html");
 	}, 500);
+	localStorage.setItem("progressbarTempo", 100);
 }
 
 function decrement() {

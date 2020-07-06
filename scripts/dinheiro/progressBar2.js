@@ -8,11 +8,11 @@ function setProgress(value) {
 	document.getElementById("progressbarDinheiro").setAttribute("aria-valuenow",value);
 	document.getElementById("progressbarDinheiro").setAttribute("style","width: " +value+ "%");	
 	document.getElementById("progressbarDinheiro").innerHTML = (value+ "%");
-	localStorage.setItem("progressoPreguica", value);
+	localStorage.setItem("progressoDinheiro", value);
 }
 
 function setProgressOnLoad () {
-	let value = localStorage.getItem("progressoPreguica");
+	let value = localStorage.getItem("progressoDinheiro");
 	document.getElementById("progressbarDinheiro").setAttribute("aria-valuenow",value);
 	document.getElementById("progressbarDinheiro").setAttribute("style","width: " +value+ "%");	
 	document.getElementById("progressbarDinheiro").innerHTML = (value+ "%");
@@ -21,17 +21,10 @@ setProgressOnLoad ();
 
 function increment() {
 	var i = getProgress();
-	if(i < 100){
-		i = parseInt(i)+50;
-		setProgress(i);	
-		
-	}else{
-        alert("Meta concluída! Resetando progresso...");
-        setProgress(0);
-	}
 	setTimeout(function() {
 		window.location.replace("/pages/dinheiroLeveis/certficado.html");
 	}, 500);
+	localStorage.setItem("progressoDinheiro", 100);
 }
 
 function decrement() {
