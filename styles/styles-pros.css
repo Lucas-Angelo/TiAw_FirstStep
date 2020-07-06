@@ -40,7 +40,10 @@ a:visited {
     justify-content: center;
     align-content: center;
 }
-
+.centro
+{
+    background-color: rgb(255, 255, 102);
+}
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
     * {
         padding: 0;
@@ -62,3 +65,56 @@ a:visited {
         line-height: normal;
     }
 }
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(251, 255, 0);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align:center;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  
+  }
+  
+  .sidenav a:hover{
+    color: #f1f1f1;
+  }
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgb(9, 104, 148);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  .barraDeProgresso{
+    align-items: center;
+    align-content: center;
+    margin: 1% 5%;
+  }
+  .openbtn:hover {
+    background-color: #444;
+  }
+  .sidenav a:hover{
+    color: #f1f1f1!important;
+  }
