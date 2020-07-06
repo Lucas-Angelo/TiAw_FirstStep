@@ -13,6 +13,8 @@ function setProgress(value) {
 
 function setProgressOnLoad () {
 	let value = localStorage.getItem("progressoDinheiro");
+	if(value==null)
+		value = 0;
 	document.getElementById("progressbarDinheiro").setAttribute("aria-valuenow",value);
 	document.getElementById("progressbarDinheiro").setAttribute("style","width: " +value+ "%");	
 	document.getElementById("progressbarDinheiro").innerHTML = (value+ "%");

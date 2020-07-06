@@ -13,6 +13,8 @@ function setProgress(value) {
 
 function setProgressOnLoad () {
 	let value = localStorage.getItem("progressbarTempo");
+	if(value==null)
+	value = 0;
 	document.getElementById("progressbarTempo").setAttribute("aria-valuenow",value);
 	document.getElementById("progressbarTempo").setAttribute("style","width: " +value+ "%");	
 	document.getElementById("progressbarTempo").innerHTML = (value+ "%");

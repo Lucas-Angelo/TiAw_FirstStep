@@ -13,6 +13,8 @@ function setProgress(value) {
 
 function setProgressOnLoad () {
 	let value = localStorage.getItem("progressoPreguica");
+	if(value==null)
+	value = 0;
 	document.getElementById("progressbarPreguica").setAttribute("aria-valuenow",value);
 	document.getElementById("progressbarPreguica").setAttribute("style","width: " +value+ "%");	
 	document.getElementById("progressbarPreguica").innerHTML = (value+ "%");
