@@ -10,7 +10,7 @@ body {
 }
 
 .main{
-    margin-top: 5vh;
+    margin-top: 5.5vh;
 }
 
 a:hover, a:visited, a:link, a:active{
@@ -27,6 +27,8 @@ a:hover, a:visited, a:link, a:active{
     align-items: center !important;
     align-content: center !important;
     padding: 0;
+    min-height: 300px;
+    max-height: 300px;
 }
 
 .card:hover{
